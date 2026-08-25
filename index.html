@@ -263,16 +263,21 @@
     <section id="topluluk" class="community">
         <h2>Topluluk Panosu</h2>
         <p>Buradan düşüncelerini yazıp bana mesaj gönderebilirsin!</p>
+<style>
+    #cusdis_thread iframe {
+        color-scheme dark;
+    }
+</style>
 
-        <form class="message-form" action="#" method="POST">
-            <label for="name">İsminiz / Rumuzunuz:</label>
-            <input type="text" id="name" name="name" placeholder="Adınızı yazın..." required>
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="367f1ae1-d83b-49f9-b761-ce1add016819"
+  data-page-id="{{ PAGE_ID }}"
+  data-page-url="{{ PAGE_URL }}"
+  data-page-title="{{ PAGE_TITLE }}"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
-            <label for="message">Mesajınız:</label>
-            <textarea id="message" name="message" placeholder="Mesajınızı buraya yazın..." required></textarea>
-
-            <button type="submit" class="send-btn">Mesajı Gönder</button>
-        </form>
     </section>
 
     <!-- HAKKIMDA -->
